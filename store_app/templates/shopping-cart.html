@@ -1,0 +1,42 @@
+
+{% extends 'layout.html'%}
+
+{% load static %}
+
+{%block body%}
+<nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Bass<span>Gear.</span></a></div>
+            <ul class="menu">
+            
+                <li><a href="/">Home</a></li>
+              
+        </div>
+    </nav>
+<br>
+<br>
+<br>
+<ul>
+  <h1 class='top'> Shopping Cart</h1>
+<section class ='checkout' id="home">
+    <ul>
+    
+      
+    {% for item in products%}
+    
+        <div class='container'>
+        <div class='row'>
+        {%if item.product %}
+       
+           <div class="card col-sm" style="width: 18rem;"> <li class='stuff'> ITEM: {{item.product}} COST: ${{item.cost}} QUANTITY: {{item.count}}</li></div>
+            {%endif%}
+           
+        {%if item.total%}
+        <br>
+
+         <li class='total'>YOUR TOTAL AMOUNT IS: ${{item.total}}<li>
+        {%endif%}
+            {%endfor%}
+    
+    </ul> 
+{%endblock%}

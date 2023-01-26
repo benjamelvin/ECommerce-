@@ -1,0 +1,3 @@
+id, name, category, image_url, cost
+1, mittens, cat, https://somesite.com/cat-pic.jpg, 20
+2, catnip, accessories, https://somesite.com/catnip-pic.jpg, 2

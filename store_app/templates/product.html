@@ -1,0 +1,61 @@
+
+
+
+{% extends 'layout.html'%}
+{% load static %}
+  {%block body%}
+<nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Bass<span>Gear.</span></a></div>
+            <ul class="menu">
+            
+                <li><a href="/">Home</a></li>
+              
+        </div>
+    </nav>
+   
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <section class ='productpage' id="home">
+<ul>
+
+{%for product in products%}
+      <div class="container-fluid">
+      <div class="row">
+        <div class='col-lg-4'><li class = 'info'>{{product.category}}</li> </div>
+        <div class='col-lg-4'><li class = 'info'>{{product.name}}</li> </div>
+        <div class='col-lg-4'><li class = 'info'>${{product.cost}}</li> </div>
+        </div>
+        <br>
+         <br>
+          <br>
+           <br>
+        <div class ='row'>
+        <div class = col-md-6><img class='pic' src="{% static product.image_url %}" alt="no image found"></div>
+         
+            </div>
+            </div>
+       <form action="/add-product/" method="POST">
+  {% csrf_token %}
+   <input type="hidden" name="model" id="the_brand" value="{{ product.id }}">
+    
+    
+  <input title = 'click to add to cart'class='value' type="submit" value="ADD TO CART">
+  </form>
+    
+</ul>
+
+{%endfor%}
+<br>
+<br>
+
+
+
+
+
+
+{%endblock%}

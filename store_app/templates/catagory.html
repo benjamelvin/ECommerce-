@@ -1,0 +1,31 @@
+{% extends 'layout.html'%}
+  {%block body%}
+   <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Bass<span>Gear.</span></a></div>
+            <ul class="menu">
+            
+                <li><a href="/">Home</a></li>
+              
+        </div>
+    </nav>
+    <br>
+     <br>
+      <br>
+
+    <h1 class='top'>All MODELS</h1>
+     <section class ='categorypage' id="home">
+<ul>
+ {% for item in data%}
+ <div class='container'>
+        <div class='row'>
+        <div class="card col-sm" style="width: 18rem;">
+<li class='text1' >Model: <a href='  /product/{{item.id}}'>{{item.name}}</a>               Price: ${{item.cost}}</li>
+</div>
+</div>
+</div>
+    {%endfor%}
+</ul>
+</html>
+
+{%endblock%}

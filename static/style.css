@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  list-style: none;
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.4s ease;
+}
+.navbar .menu li a {
+  color:black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .logo a {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a:hover {
+  color: crimson;
+}
+
+.menu-btn {
+    color: rgb(215, 27, 27);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.categorypage {
+    
+    background: url("bass.jpeg") no-repeat center;
+    height: 100vh;
+    color: rgb(27, 26, 26);
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+    
+  
+  }
+  .home .max-width {
+    margin: auto 0 auto 40px;
+  }
+  .home .home-content .text-1 {
+    font-size: 27px;
+    color:aqua;
+  }
+  .home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color:aqua
+  }
+  .home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    color: aqua;
+  }
+  .home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+  }
+  .home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease ;
+    }
+    .home .home-content a:hover{
+      color: crimson;
+      background: none;
+    }
+  .row{
+    padding-left: 60px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .value{
+    margin-left: 17em;
+    background-color: orange;
+    border-radius:12px ;
+    color: crimson;;
+    
+    padding: 20px 20px;
+    margin: 20px 20px;
+    cursor: pointer;
+ }
+
+  
+  .pic{
+    margin-left:100px ;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    padding: 0%;
+    mix-blend-mode: multiply;
+    border: red;
+    border-radius: 50px;
+}
+.pic:hover {
+  transform: scale(1.5);
+  mix-blend-mode: normal;
+  border-radius: 12px;
+}
+.productpage {
+ 
+  background: url("products.webp") no-repeat center;
+  height: 100vh;
+  color: rgb(27, 26, 26);
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+  background-blend-mode:lighten;
+  background-color: darkseagreen;
+
+}
+.home {
+  display: flex;
+  background: url("product.jpeg") no-repeat center;
+  height: 100vh;
+  color: rgb(27, 26, 26);
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+
+}
+.hot {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 800;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#my_input{
+  margin-left: 30px;
+}
+.stuff{
+  font-weight: 800;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.checkout {
+  display: flex;
+  background: url("productss.jpeg") no-repeat center;
+  background-blend-mode:lighten;
+  height: 100vh;
+  color: rgb(27, 26, 26);
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: crimson;
+  border-radius: 8px;
+  border-radius: 13px;
+}
+.total{
+  color:aliceblue;
+  background: black;
+}
+.total:hover{
+  transform: scale(2.0);
+}
+.searchin{
+  background: crimson;
+}
+.top{
+  font-weight:800;
+  margin-left: 50px;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+.text1{
+  font-size: 20px;
+  
+
+}
+.info{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+}

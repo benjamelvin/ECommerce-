@@ -1,0 +1,49 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+ 
+    
+    <main>
+    
+
+      <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Bass<span>Gear.</span></a></div>
+            <ul class="menu">
+            
+               
+                {%for i in products%}
+               
+                <li><a href="/catagory/{{i.category}}">{{i.category}}</a></li>
+                {% endfor %}
+                <li><a href="shopping-cart">Shopping Cart</a></li>
+                {% comment %} <form method=post action='search'>
+                {%csrf_token%} {% endcomment %}
+                {% comment %} <input id='my_input' value='search'>
+                <button onclick='get_icon()'>click me </button> {% endcomment %}
+                {% comment %} </form> {% endcomment %}
+            
+              <li><a href="search">Search</a></li>
+   
+            </ul>
+            <div class="menu-btn">
+                <i class='fas fa-bars'></i>
+            </div>
+        </div>
+    </nav>
+       <section class ='home' id="home">
+    <div class="max-width">
+    <div class="home-content">
+    <div class="text-1">Your One Stop Shop</div>
+    <div class="text-2">For All Things</div>
+    <div class="text-3">Bass!!! <span>Special Sale This Month Only On</span></div>
+    <a href="/catagory/Speakers">Speakers</a>
+   
+    </main>
+    <footer>
+     
+    </footer>
+  
+
+
+{%endblock%}
